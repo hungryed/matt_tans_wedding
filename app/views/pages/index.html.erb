@@ -4,9 +4,9 @@
     <img class="wide-cover-image" src="//media.front.xoedge.com/images/2008bd88-afac-41e8-a264-d062d7e88444~rt_0-cr_0.894.2667.2231"/>
   </div>
   <div id="title-container">
-    <h1 id="wedding-title">Tania and Matthew</h1>
+    <h1 id="wedding-title"><%= t('index.title') %></h1>
     <h2 id="wedding-date-location">
-      <span id="wedding-date">August 22, 2015</span> in <span id="wedding-location">Heredia, He</span>
+      <span id="wedding-date"><%= t('index.date_html') %></span>
     </h2>
     <h2 id="wedding-countdown"><%= t('index.days_to_go', :days_left => ((DateTime.parse('August 22, 2015').to_i - Time.now.to_i) / (24 * 60 * 60)  + 1))%></h2>
   </div>
@@ -31,7 +31,7 @@
             <div class="wedding-event-separator"></div>
             <div class="wedding-event-title item-title"><%= t('index.event.ceremony.title') %></div>
             <div class="wedding-event-venue"><%= t('index.event.ceremony.venue') %></div>
-            <div class="wedding-event-address"><%= t('index.event.ceremony.title') %></div>
+            <div class="wedding-event-address"><%= t('index.event.ceremony.address') %></div>
             <div class="wedding-event-separator"></div>
             <div class="wedding-event-title item-title"><%= t('index.event.reception.title') %></div>
             <div class="wedding-event-venue"><%= t('index.event.reception.venue') %></div>
