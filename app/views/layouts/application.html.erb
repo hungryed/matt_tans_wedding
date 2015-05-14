@@ -30,31 +30,31 @@
       <div class="has_content" id="main-nav-container">
         <div class="hidden" data-created-date="2015-01-11 03:32:49 UTC" data-url="/us/tania-sibaja-and-matthew-wagner-aug-2015" data-wedding-date="2015-08-22 00:00:00 UTC" id="wedding-data"></div>
         <div class="main-nav-container-inner">
-          <div class="clearfix">
+          <div class="clearfix" id="primary_nav_wrap">
             <button class="main-nav"><%= t('nav.menu') %></button>
           </div>
           <button class="rsvp"><%= t('nav.rsvp') %></button>
           <nav class="main-nav-hidden" data-behavior="Registry.fetchRetailers" id="main-nav">
             <ul>
               <li>
-                <%= link_to t('nav.our_wedding'), root_path %>
+                <%= link_to t('nav.our_wedding'), root_path(:t => @locale) %>
                 <ul>
-                  <li><a class="selected" href="<%= root_path + '#our-wedding' %>"><%= t('nav.our_wedding') %></a></li>
-                  <li><a class="selected" href="<%= root_path + '#other-events' %>"><%= t('nav.other_events') %></a></li>
-                  <li><a class="selected" href="<%= root_path + '#wedding-party' %>"><%= t('nav.wedding_party') %></a></li>
+                  <li><a class="selected" href="<%= root_path(:t => @locale) + '#our-wedding' %>"><%= t('nav.our_wedding') %></a></li>
+                  <li><a class="selected" href="<%= root_path(:t => @locale) + '#other-events' %>"><%= t('nav.other_events') %></a></li>
+                  <li><a class="selected" href="<%= root_path(:t => @locale) + '#wedding-party' %>"><%= t('nav.wedding_party') %></a></li>
                 </ul>
               </li>
               <li>
-                <%= link_to t('nav.details'), details_path %>
+                <%= link_to t('nav.details'), details_path(:t => @locale) %>
                 <ul>
-                  <li><a class="" href="<%= details_path + '#accommodations' %>"><%= t('nav.accommodations') %></a></li>
-                  <li><a class="" href="<%= details_path + '#things-to-do' %>"><%= t('nav.things_to_do') %></a></li>
+                  <li><a class="" href="<%= details_path(:t => @locale) + '#accommodations' %>"><%= t('nav.accommodations') %></a></li>
+                  <li><a class="" href="<%= details_path(:t => @locale) + '#things-to-do' %>"><%= t('nav.things_to_do') %></a></li>
                 </ul>
               </li>
               <li>
-                <%= link_to t('nav.photos'), photos_path %>
+                <%= link_to t('nav.photos'), photos_path(:t => @locale) %>
                 <ul>
-                  <li><%= link_to 'Tan & Matt', photos_path %></li>
+                  <li><%= link_to 'Tan & Matt', photos_path(:t => @locale) %></li>
                 </ul>
               </li>
               <li><a class="" href="#"><%= t('nav.registry') %></a>
