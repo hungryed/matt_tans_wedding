@@ -1,0 +1,174 @@
+<header id="header">
+  <div class="header-background"></div>
+  <div id="cover-image">
+    <img class="wide-cover-image" src="//media.front.xoedge.com/images/2008bd88-afac-41e8-a264-d062d7e88444~rt_0-cr_0.894.2667.2231"/>
+  </div>
+  <div id="title-container">
+    <h1 id="wedding-title">Tania and Matthew</h1>
+    <h2 id="wedding-date-location">
+      <span id="wedding-date">August 22, 2015</span> in <span id="wedding-location">Heredia, He</span>
+    </h2>
+    <h2 id="wedding-countdown"><%= t('index.days_to_go', :days_left => ((DateTime.parse('August 22, 2015').to_i - Time.now.to_i) / (24 * 60 * 60)  + 1))%></h2>
+  </div>
+</header>
+<div id="content">
+  <div class="content-background"></div>
+  <div class="page">
+    <div class="page-background"></div>
+    <div class="page-sections">
+      <div class="anchor" id="our-wedding"></div>
+      <div class="wedding-event-section">
+        <div class="wedding-event-section-background"></div>
+        <div class="wedding-event-section-title-border-top"></div>
+        <div class="wedding-event-section-title"><%= t('nav.our_wedding') %></div>
+        <div class="wedding-event-section-title-border-bottom"></div>
+        <p class="wedding-event-section-description"></p>
+        <div class="wedding-event-section-items">
+          <div class="wedding-event-item">
+            <div class="wedding-event-title"></div>
+            <div class="wedding-event-date"><%= t('index.event.date') %><br><%= t('index.event.time') %></br></div>
+            <div class="wedding-event-attire"><%= t('index.event.attire') %></div>
+            <div class="wedding-event-separator"></div>
+            <div class="wedding-event-title item-title"><%= t('index.event.ceremony.title') %></div>
+            <div class="wedding-event-venue"><%= t('index.event.ceremony.venue') %></div>
+            <div class="wedding-event-address"><%= t('index.event.ceremony.title') %></div>
+            <div class="wedding-event-separator"></div>
+            <div class="wedding-event-title item-title"><%= t('index.event.reception.title') %></div>
+            <div class="wedding-event-venue"><%= t('index.event.reception.venue') %></div>
+            <div class="wedding-event-address"><%= t('index.event.reception.address') %></div>
+          </div>
+        </div>
+      </div>
+      <div class="section-separator"></div>
+      <div class="anchor" id="other-events"></div>
+      <div class="event-section">
+        <div class="event-section-background"></div>
+        <div class="event-section-title-border-top"></div>
+        <div class="event-section-title"><%= t('index.other_events.title') %></div>
+        <div class="event-section-title-border-bottom"></div>
+        <p class="event-section-description"></p>
+        <div class="event-section-items">
+          <div class="event-item">
+            <div class="event-title item-title"><%= t('index.other_events.bbq.title') %></div>
+            <div class="event-date"><%= t('index.other_events.bbq.date') %><br><%= t('index.other_events.bbq.time') %></br></div>
+            <div class="event-venue"><%= t('index.other_events.bbq.venue') %></div>
+            <div class="event-address"><%= t('index.other_events.bbq.address') %></div>
+            <div class="event-description">
+              <p><%= t('index.other_events.bbq.description') %><br></p>
+            </div>
+          </div>
+          <div class="event-separator"></div>
+          <div class="event-item">
+            <div class="event-title item-title"><%= t('index.other_events.parties.title') %></div>
+            <div class="event-date"><%= t('index.other_events.parties.date') %><br><%= t('index.other_events.parties.time') %></br></div>
+            <div class="event-venue"><%= t('index.other_events.parties.venue') %></div>
+            <div class="event-address"><%= t('index.other_events.parties.address') %></div>
+            <div class="event-description">
+              <p><%= t('index.other_events.parties.bachelor_description') %></p>
+              <p><%= t('index.other_events.parties.bachelorette_description') %><br></p>
+            </div>
+          </div>
+          <div class="event-separator"></div>
+          <div class="event-item">
+            <div class="event-title item-title"><%= t('index.other_events.rehearsal_dinner.title') %></div>
+            <div class="event-date"><%= t('index.other_events.rehearsal_dinner.date') %><br><%= t('index.other_events.rehearsal_dinner.time') %></br></div>
+            <div class="event-venue"><%= t('index.other_events.rehearsal_dinner.venue') %></div>
+            <div class="event-address"><%= t('index.other_events.rehearsal_dinner.address') %></div>
+            <div class="event-description"><%= t('index.other_events.rehearsal_dinner.description') %></div>
+          </div>
+          <div class="event-separator"></div>
+        </div>
+      </div>
+      <div class="section-separator"></div>
+      <div class="anchor" id="wedding-party"></div>
+      <div class="wedding-party-section">
+        <div class="wedding-party-section-background"></div>
+        <div class="wedding-party-section-title-border-top"></div>
+        <div class="wedding-party-section-title"><%= t('index.wedding_party.title') %></div>
+        <div class="wedding-party-section-title-border-bottom"></div>
+        <p class="wedding-party-section-description"></p>
+        <div class="wedding-party-section-items">
+          <div class="col-md-6">
+            <div class="wedding-party-item">
+              <div class="wedding-party-content-container">
+                <div class="wedding-party-title"><%= t('index.wedding_party.groom.rick.title') %></div>
+                <div class="wedding-party-description"><p><%= t('index.wedding_party.groom.rick.description') %></p></div>
+              </div>
+            </div>
+            <div class="wedding-party-separator"></div>
+            <div class="wedding-party-item">
+              <div class="wedding-party-content-container">
+                <div class="wedding-party-title"><%= t('index.wedding_party.groom.nate.title') %></div>
+                <div class="wedding-party-description"><p><%= t('index.wedding_party.groom.nate.description') %></p></div>
+              </div>
+            </div>
+            <div class="wedding-party-separator"></div>
+            <div class="wedding-party-item">
+              <div class="wedding-party-content-container">
+                <div class="wedding-party-title"><%= t('index.wedding_party.groom.joe.title') %></div>
+                <div class="wedding-party-description"><p><%= t('index.wedding_party.groom.joe.description') %></p></div>
+              </div>
+            </div>
+            <div class="wedding-party-separator"></div>
+            <div class="wedding-party-item">
+              <div class="wedding-party-content-container">
+                <div class="wedding-party-title"><%= t('index.wedding_party.groom.luis.title') %></div>
+                <div class="wedding-party-description"><p><%= t('index.wedding_party.groom.luis.description') %><br></p></div>
+              </div>
+            </div>
+            <div class="wedding-party-separator"></div>
+            <div class="wedding-party-item">
+              <div class="wedding-party-content-container">
+                <div class="wedding-party-title"><%= t('index.wedding_party.groom.cris.title') %></div>
+                <div class="wedding-party-description"><p><%= t('index.wedding_party.groom.cris.description') %><br></p></div>
+              </div>
+            </div>
+            <div class="wedding-party-separator"></div>
+          </div>
+          <div class="section-separator hidden-md hidden-lg"></div>
+          <div class="col-md-6">
+            <div class="wedding-party-item">
+              <div class="wedding-party-content-container">
+                <div class="wedding-party-title"><%= t('index.wedding_party.bride.ileana.title') %></div>
+                <div class="wedding-party-description"><p><%= t('index.wedding_party.bride.ileana.description') %></p></div>
+              </div>
+            </div>
+            <div class="wedding-party-separator"></div>
+            <div class="wedding-party-item">
+              <div class="wedding-party-content-container">
+                <div class="wedding-party-title"><%= t('index.wedding_party.bride.veronica.title') %></div>
+                <div class="wedding-party-description"><p><%= t('index.wedding_party.bride.veronica.description') %></p></div>
+              </div>
+            </div>
+            <div class="wedding-party-separator"></div>
+            <div class="wedding-party-item">
+              <div class="wedding-party-content-container">
+                <div class="wedding-party-title"><%= t('index.wedding_party.bride.irene.title') %></div>
+                <div class="wedding-party-description"><p><%= t('index.wedding_party.bride.irene.description') %></p></div>
+              </div>
+            </div>
+            <div class="wedding-party-separator"></div>
+            <div class="wedding-party-item">
+              <div class="wedding-party-content-container">
+                <div class="wedding-party-title"><%= t('index.wedding_party.bride.alejandra.title') %></div>
+                <div class="wedding-party-description"><p><%= t('index.wedding_party.bride.alejandra.description') %></p></div>
+              </div>
+            </div>
+            <div class="wedding-party-separator"></div>
+            <div class="wedding-party-item">
+              <div class="wedding-party-content-container">
+                <div class="wedding-party-title"><%= t('index.wedding_party.bride.marietta.title') %></div>
+                <div class="wedding-party-description"><p><%= t('index.wedding_party.bride.marietta.description') %></p></div>
+              </div>
+            </div>
+            <div class="wedding-party-separator"></div>
+          </div>
+        </div>
+      </div>
+      <div class="section-separator"></div>
+    </div>
+  </div>
+</div>
+<div class="theme-image-container-bottom">
+  <div class="theme-image-bottom"></div>
+</div>

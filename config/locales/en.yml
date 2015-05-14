@@ -20,4 +20,85 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  nav:
+    our_wedding: Our Wedding
+    other_events: Other Events
+    wedding_party: Wedding Party
+    accommodations: Accommodations
+    things_to_do: Things to Do
+    registry: Registry
+    photos: Photos
+    details: Details
+  index:
+    days_to_go: "%{days_left} days to go!"
+    event:
+      date: "Saturday, August 22, 2015"
+      time: 4:30 PM
+      attire: "Attire: Men: Formal Suit ---- Women: Formal (floor length) evening gown"
+      ceremony:
+        title: Ceremony
+        venue: Iglesia del Rosario
+        address: "Santo Domingo, Heredia Province, Costa Rica"
+      reception:
+        title: Reception
+        venue: DoubleTree by Hilton Cariari San Jose
+        address: "1, Belén, Heredia, Costa Rica"
+    other_events:
+      title: Other Events
+      bbq:
+        title: Welcome BBQ
+        date: "Wednesday, August 19, 2015"
+        venue: El Castillo Country Club
+        address: San Rafael de Heredia, Costa Rica
+        description: On Wednesday we would like for all of our family and friends to join us for the kick-starter of a very eventful week. This is a very casual get to know each other BBQ. Anyone and everyone is welcome!
+      parties:
+        title: Bachelor / Bachelorette Party
+        date: "Thursday, August 20, 2015"
+        time: 8:30 PM
+        venue: TBA
+        address: ''
+        bachelor_description: The Bachelor Party is being organized by the Groom's brother and the brother of the Bride.
+        bachelorette_description: The Bachelorette Party is being organized by the Matron of Honor and the Bride's BFF.
+      rehearsal_dinner:
+        title: Rehearsal Dinner
+        date: Friday, August 21, 2015
+        time: 7:30 PM
+        venue: TBA
+        address: ''
+        description: ''
+    wedding_party:
+      title: "Wedding Party"
+      groom:
+        rick:
+          title: "Richard F. Wagner - Best Man"
+          description: "Father of the Groom"
+        nate:
+          title: "Nathan Wagner - Groomsman"
+          description: "Brother of the Groom"
+        joe:
+          title: "Joe Sutton - Groomsman"
+          description: "Groom's Best Friend"
+        luis:
+          title: "Luis Sibaja - Groomsman"
+          description: "Brother in Law of the Bride"
+        cris:
+          title: "Cristopher Herrera - Groomsman"
+          description: "Brother in Law of the Bride"
+      bride:
+        ileana:
+          title: "Ileana Sibaja - Matron of Honor"
+          description: "Sister of the bride"
+        veronica:
+          title: "Veronica Villalobos - Bridesmaid"
+          description: "Bride's Sister-in-Law"
+        irene:
+          title: "Irene Salazar - Bridesmaid"
+          description: "Bride's Cousin"
+        alejandra:
+          title: "Alejandra Fernandez - Bridesmaid"
+          description: "Bride's Cousin"
+        marietta:
+          title: "Marietta Chacon G. - Bridesmaid"
+          description: "Bride's Aunt"
+  details: thing
+
